@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="menu">
+      <a href="index.html" class="menuBtn">
+        <p>Home</p>
+      </a>
+
+      <a href="calculator.html" class="menuBtn">
+        <p>Calculator</p>
+      </a>
+
+      <a href="list.html" class="menuBtn">
+        <p>List</p>
+      </a>
+    </nav>
+
+    <h1 class="title">Calculator</h1>
+
+    <div class="calculator">
+      <div class="divNum1">
+        <p class="num1">Num 1:</p>
+        <input type="text" id="txtNum1" />
+      </div>
+
+      <div class="divNum2">
+        <p class="num2">Num 2:</p>
+        <input type="text" id="txtNum2" />
+      </div>
+
+      <div class="divResult">
+        <p class="result">Result:</p>
+        <p class="textResult" id="textResult">0</p>
+      </div>
+
+      <div class="divButtons">
+        <button class="button" type="button" onclick="sum()">+</button>
+        <button class="button" type="button" onclick="mult()">x</button>
+        <button class="button" type="button" onclick="div()">/</button>
+        <button class="button" type="button" onclick="sub()">-</button>
+        <button class="button" type="button" onclick="clearFields()">C</button>
+      </div>
+
+      <div class="divButtons">
+        <button class="btnMenu" type="button" onclick="saveNumber()">
+          Save
+        </button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
