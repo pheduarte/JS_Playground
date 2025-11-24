@@ -77,6 +77,12 @@ body {
   font-size: 16px;
 }
 
+.divNum1 {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between input and button */
+}
+
 @media (max-width: 480px) {
   .divNum1,
   .divNum2,
@@ -86,6 +92,7 @@ body {
     gap: 6px;
   }
 }
+
 .title {
   text-align: center;
   color: rgb(0, 0, 0);
@@ -159,4 +166,11 @@ body {
 
 .titleItems {
   color: rgb(0, 0, 0);
+}
+
+#txtNum1 {
+  font-size: 1rem; /* 16px equivalent but scalable */
+  padding: 8px;
+  flex: 1; /* optional: makes input expand */
+  max-width: 250px; /* or remove if you want full flexibility */
 }
