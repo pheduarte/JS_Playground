@@ -82,7 +82,7 @@ body {
     align-items: flex-start;
     gap: 6px;
   }
-
+}
 .title {
   text-align: center;
   color: rgb(25, 122, 171);
@@ -152,4 +152,8 @@ body {
 
 .deleteBtn:hover {
   background-color: darkred;
+}
+
+.titleItems {
+  color: rgb(255, 255, 255);
 }
