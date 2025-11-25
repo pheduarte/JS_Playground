@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleList.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -24,15 +24,20 @@
 
     <h1 class="title">Lists</h1>
 
-    <div class="calculator">
+    <div class="newItemFrame">
       <div class="divNum1">
         <p class="num1">New item:</p>
-        <input type="text" id="txtNum1" />
-        <button type="btnAdd" onclick="addItem()">Add</button>
-      </div>
 
+        <div class="inputRow">
+          <input type="text" id="txtNum1" />
+          <button class="btnAdd" type="button" onclick="addItem()">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="listFrame">
       <h2 class="titleItems">Items</h2>
-      <ul id="list"></ul>
+      <ul class="listItems" id="list"></ul>
     </div>
 
     <script src="list.js"></script>
